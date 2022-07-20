@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+	padding: 0 10px;
+} */
+#main-body{
+    justify-content: center;
+}
+
+.wrapper{
+    background: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+/* navbar */
+.header-navbar .navbar-wrapper .navbar-logo {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60px !important;
+    padding: 10px;
+}
+.header-navbar .navbar-wrapper .navbar-welcome {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px !important;
+    padding: 10px;
+}
+.header-navbar .navbar-wrapper .navbar-welcome p {
+    margin-bottom: 0 !important;
+    font-size: 1rem;
+}    
+/* sign up form css */
+
+.form{
+    padding: 25px 30px;
+}
+
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+.form form{
+    margin: 20px 0
+}
+
+.form form .error-text{
+    color: #721c24;
+    background-color: #f8d7da;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px !important;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+
+.form form .name-details{
+    display: flex;
+}
+
+.form form .name-details .field:first-child{
+    margin-right: 10px;
+}
+
+.form form .name-details .field:last-child{
+    margin-left: 10px;
+}
+
+.form form .field{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .field label{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+/* .form form .field input{
+    outline: none;
+} */
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+.form form .input textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form form .input .form-select{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form form .file input{
+    font-size: 16px;
+}
+
+.form form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    color: rgba(0,0,0,0.5);
+    top: 60%;
+    cursor: pointer;
+}
+
+.fa-fingerprint:before {
+    content: "\f577";
+    color:rgb(189, 1, 1);
+}
+
+.fa-eye:before {
+    content: "\f070";
+    color: #cccccc;
+}    
+
+.form form .field i.active::before{
+    color: #333333;
+    content: "\f070";
+}
+
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.form .link a{
+    color: #333333;
+}
+
+.form .link a:hover{
+    text-decoration: underline;
+}
+
+/* index.php */
+.center_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+	padding: 0 10px;
+}
+
+/* user table */
+.user_table th, .user_table td {
+    text-align: center;
+}
+.table_wrapper {
+    background: white;
+    width: 95%;
+    height: auto;
+    padding: 25px 25px 25px 25px;
+    border-radius: 16px;
+    margin: auto;
+    word-wrap: auto;
+    overflow: auto;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.table_wrapper header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+.table_wrapper .btn-primary{
+    font-size: 14px;
+}
+
+
+/* Notice Board */
+
+.row {
+    min-width: -webkit-fill-available;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    /* border-radius: 0; */
+    margin-bottom: 30px;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.57rem;
+}
+
+.card-body .text-truncate {
+    height: 25px;
+}
+
+.card-body .note-content {
+    min-height: 30vh;
+    max-height: 30vh;
+    overflow: hidden;
+    margin-bottom: 13px;
+}
+.note-has-grid {
+    padding: 0px 15px;
+}
+.note-has-grid .single-note-item .card {
+    border-radius: 10px;
+}
+
+.note-has-grid .single-note-item .side-stick {
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    left: 0;
+    background-color: rgba(44, 171, 227, .5);
+}
+
+.note-has-grid .single-note-item:hover .note-content{
+    overflow: auto;
+}
+
+/* Scroll Bar */
+/* width */
+.note-content::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+.note-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+.note-content::-webkit-scrollbar-thumb {
+    background: rgba(44, 171, 227, .5);
+}
+  
+  /* Handle on hover */
+.note-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(44, 171, 227);
+}
+
+.d-flex{
+    flex-direction: column;
+}
+.card-body .d-flex .btn{
+    max-width: 138px;
+    margin-top: 5px;
+} 
+.card-body .d-flex .btn:hover{
+    cursor: pointer;
+} 
+.card-body .d-flex textarea{
+    width: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+} 
+
+/* custom dropdown */
+
+.input select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.select {
+    position: relative;
+}
+  
+.select::after {
+    content: "▼";
+    color: grey;
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
+/**====== User Profile card css starts ======**/
+
+.emp-profile{
+    box-shadow: 0 1px 2.94px 0.06px rgb(4 26 55 / 16%);
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 30%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+/**====== User Profile card css ends ======**/
+
+/* Button animation */
+
+.button__text {
+    transition: all 0.2s;
+}
+
+.button--loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+}
+  
+.button--loading::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+.form form .button button{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background: #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Responive media query */
+
+@media (max-width:767.98px) {
+    .note-has-grid .single-note-item {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80% !important;
+        max-width: 80%;
+    }
+}
+
+@media (max-width:991.98px) {
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    .note-has-grid{
+        justify-content: center;
+    }
+    .card-body .note-content {
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .form, .users{
+    padding: 20px;
+  }
+  .form header{
+    text-align: center;
+  }
+  .form form .name-details{
+    flex-direction: column;
+  }
+  .form form .name-details .field:first-child{
+    margin-right: 0px;
+  }
+  .form form .name-details .field:last-child{
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .header-navbar .navbar-wrapper .navbar-welcome {
+        display: none;
+    }
+}
+
